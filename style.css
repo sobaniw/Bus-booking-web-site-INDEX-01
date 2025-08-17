@@ -1,0 +1,122 @@
+/* WhatsApp Inspired Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #3b4a54;
+}
+
+.container {
+    width:100%;
+    max-width: 720px;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: pink;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(11, 20, 26, 0.08);
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    text-align: center;
+    color: blue;
+}
+
+.input-group {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color:black;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #e9edef;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f0f2f5;
+    transition: border 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00a884;
+    background-color: #ffffff;
+}
+
+input::placeholder {
+    color: #aebac1;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #008069;
+}
+
+.footer {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 14px;
+    color: #667781;
+}
+
+.footer a {
+    color: blue;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.error-box {
+    background-color: #fde8e8;
+    color: #d32f2f;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.success-box {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+}

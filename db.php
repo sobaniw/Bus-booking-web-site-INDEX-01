@@ -1,11 +1,13 @@
 <?php
-$host = "localhost";
-$user = "root";  // Change this if you have a different DB user
-$pass = "";      // Set password if applicable
-$db = "forum_db";
+$host = 'localhost';
+$dbname = 'project2';
+$username = 'root';
+$password = '';
 
-$conn = new mysqli($host, $user, $pass, $db);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
 }
 ?>
