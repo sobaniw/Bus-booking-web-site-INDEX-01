@@ -5,14 +5,14 @@ body {
     font-family:sans-serif;
     line-height:1.5;
     min-height:100vh;
-    background:palevioletred;
+    background:white;
     flex-direction: column;
     margin:0;
 }
 .main{ 
     background-color:pink;
     border-radius:15px;
-    box-shadow:0 0 20px rgb(140, 6, 29);;
+    box-shadow:0 0 20px rgb(242, 236, 237);;
     padding:10px 20px;
     transition: transform 0.2s;
     width:500px;
